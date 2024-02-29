@@ -22,7 +22,16 @@ Uncover patterns and correlations between song features and popularity.
   - The dataset used in this project was obtained from Kaggle, a platform known for high-quality datasets. (https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs?resource=download)
   - Data has been validated to ensure accuracy and reliability.
   - Since the dataset originates from Spotify via Kaggle, we can trust its authenticity, and steps have been taken to confirm the data's validity.
-
+  - The original dataset was initially available in CSV format.
+  - Due to compatibility considerations with Microsoft SQL Server Studio, the dataset was converted to Excel format for ease of import.
 - **Data Exploration:**
   - Use SQL queries to understand the structure of the data.
   - Identify potential areas of interest.
+
+- **Excel Format for SQL Server:**
+  - Excel format facilitates a smoother import process into Microsoft SQL Server Studio.
+  - The dataset in Excel format is more conducive to SQL operations and analysis.
+
+- **Data Validation:**
+  - Before conversion, the integrity of the dataset was validated to ensure accurate representation after the format change.
+
