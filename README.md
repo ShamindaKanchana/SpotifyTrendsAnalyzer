@@ -35,3 +35,14 @@ Uncover patterns and correlations between song features and popularity.
 - **Data Validation:**
   - Before conversion, the integrity of the dataset was validated to ensure accurate representation after the format change.
 
+### 2. Process
+
+#### Data Cleaning -Removing Duplicates
+
+To ensure data quality and eliminate duplicate entries, I performed a cleaning step to identify and retain only the most popular tracks within each group of duplicates. The following SQL query was used:
+
+```sql
+-- Find duplications from the dataset and keep only the most popular tracks
+SELECT DISTINCT track_artist, track_name, track_popularity
+FROM spotify_songs$
+WHERE track_popularity = (SELECT MAX(track_popularity) FROM spotify_songs$);
