@@ -46,3 +46,64 @@ To ensure data quality and eliminate duplicate entries, I performed a cleaning s
 SELECT DISTINCT track_artist, track_name, track_popularity
 FROM spotify_songs$
 WHERE track_popularity = (SELECT MAX(track_popularity) FROM spotify_songs$);
+```
+
+
+#### Data Cleaning - Remove  Duplicates and Select Relevant Fields
+
+It will be easy if we converted some fields in to some appropriate formats. For future analysis we need to have some varience of each of values. Otherwise it will be difficult to identify significance of data when we do visualize. So 
+To ensure data accuracy and streamline the dataset for analysis, a data cleaning step was performed. The following SQL query was utilized to remove duplicates and select only the relevant fields for analysis:
+
+```sql
+-- Remove duplications from the dataset and choose the required fields with appropriate modifications
+WITH UniqueRows AS (
+  SELECT
+    track_name,
+    track_artist,
+    track_popularity,
+    track_album_name,
+    YEAR(track_album_release_date) as released_year,
+    playlist_name,
+    playlist_genre,
+    playlist_subgenre,
+    danceability*100 as danceability, -- Show as percentage
+    energy*100 as energy,
+    [key],
+    loudness,
+    mode,
+    speechiness*100 as speechiness,
+    acousticness*100 as acousticness,
+    liveness*100 as liveness,
+    valence*100 as valence,
+    ROUND(tempo,2) as tempo, -- Keep only two decimal places
+    FORMAT(DATEADD(MILLISECOND, duration_ms, 0), 'mm:ss') as duration, -- Convert milliseconds to minutes and seconds
+    ROW_NUMBER() OVER (PARTITION BY track_name, track_artist ORDER BY track_popularity DESC) AS RowNum
+  FROM
+    spotify_songs$
+)
+SELECT
+  track_name,
+  track_artist,
+  track_popularity,
+  track_album_name,
+  released_year,
+  playlist_name,
+  playlist_genre,
+  playlist_subgenre,
+  danceability,
+  energy,
+  [key],
+  loudness,
+  mode,
+  speechiness,
+  acousticness,
+  liveness,
+  valence,
+  tempo,
+  duration
+FROM
+  UniqueRows
+WHERE
+  RowNum = 1;
+```
+
