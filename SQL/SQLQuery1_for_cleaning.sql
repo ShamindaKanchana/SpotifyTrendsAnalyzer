@@ -10,11 +10,7 @@ GROUP BY track_name, track_artist
 HAVING COUNT(*) > 1
 order by duplications desc;
 
-select  count(*) from spotify_songs$
-where track_artist like 'Ariana%';
 
-select track_name,track_artist from spotify_songs$
-where track_name like 'Music has the Powe%'
 
 --Remove duplications from the dataset and choose the fields which are only required to my analyse with appropriate  modifications 
 WITH UniqueRows AS (
@@ -27,15 +23,15 @@ WITH UniqueRows AS (
 	playlist_name,
 	playlist_genre,
 	playlist_subgenre,
-	danceability*100 as danceability, --to show as percentage
-	energy*100 as energy,
+	ROUND(danceability*100,1) as danceability, --to show as percentage
+	ROUND(energy*100,1) as energy,
 	[key],
-	loudness,
+	ROUND(loudness,2) as loudness,
 	mode,
-	speechiness*100 as speechiness, 
-	acousticness*100 as acousticness, 
-	liveness*100 as liveness, 
-	valence*100 as valence, 
+	ROUND(speechiness*100,2) as speechiness, 
+	ROUND(acousticness*100,2) as acousticness, 
+	ROUND(liveness*100,2) as liveness, 
+	ROUND(valence*100,2) as valence, 
 	ROUND(tempo,2) as tempo, --to keep only two decimal places 
 	FORMAT(DATEADD(MILLISECOND,duration_ms,0),'mm:ss') as duration, --convert milliseconds to minutes and seconds 
     ROW_NUMBER() OVER (PARTITION BY track_name, track_artist ORDER BY track_popularity DESC) AS RowNum
@@ -66,5 +62,34 @@ SELECT
   UniqueRows
 WHERE
   RowNum = 1;
+
+
+
+
+ 
+
+--To check which rows having null values
+select * from spotify_songs$ where track_name is null or playlist_name is null or playlist_genre is null or 
+playlist_genre is null or 
+playlist_subgenre is null or 
+danceability is null or energy is null or
+[key] is null or
+loudness is null or 
+mode is null or 
+speechiness is null or 
+acousticness is null or 
+liveness is null or 
+valence is null or 
+tempo is null or 
+duration_ms is null;
+
+
+select * from  spotify_songs_cleaned$;
+
+--Remove row which having null value 
+
+delete from spotify_songs$
+where track_name is null;
+
 
 
