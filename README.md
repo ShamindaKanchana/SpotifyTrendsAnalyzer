@@ -42,10 +42,12 @@ Uncover patterns and correlations between song features and popularity.
 To ensure data quality and eliminate duplicate entries, I performed a cleaning step to identify and retain only the most popular tracks within each group of duplicates. The following SQL query was used:
 
 ```sql
--- Find duplications from the dataset and keep only the most popular tracks
-SELECT DISTINCT track_artist, track_name, track_popularity
+--Find duplications from the dataset 
+SELECT track_name, track_artist, COUNT(*) as duplications 
 FROM spotify_songs$
-WHERE track_popularity = (SELECT MAX(track_popularity) FROM spotify_songs$);
+GROUP BY track_name, track_artist
+HAVING COUNT(*) > 1
+order by duplications desc;
 ```
 
 
@@ -61,22 +63,22 @@ WITH UniqueRows AS (
     track_name,
     track_artist,
     track_popularity,
-    track_album_name,
-    YEAR(track_album_release_date) as released_year,
-    playlist_name,
-    playlist_genre,
-    playlist_subgenre,
-    danceability*100 as danceability, -- Show as percentage
-    energy*100 as energy,
-    [key],
-    loudness,
-    mode,
-    speechiness*100 as speechiness,
-    acousticness*100 as acousticness,
-    liveness*100 as liveness,
-    valence*100 as valence,
-    ROUND(tempo,2) as tempo, -- Keep only two decimal places
-    FORMAT(DATEADD(MILLISECOND, duration_ms, 0), 'mm:ss') as duration, -- Convert milliseconds to minutes and seconds
+	track_album_name,
+	YEAR(track_album_release_date) as released_year ,
+	playlist_name,
+	playlist_genre,
+	playlist_subgenre,
+	ROUND(danceability*100,1) as danceability, --to show as percentage
+	ROUND(energy*100,1) as energy,
+	[key],
+	ROUND(loudness,2) as loudness,
+	mode,
+	ROUND(speechiness*100,2) as speechiness, 
+	ROUND(acousticness*100,2) as acousticness, 
+	ROUND(liveness*100,2) as liveness, 
+	ROUND(valence*100,2) as valence, 
+	ROUND(tempo,2) as tempo, --to keep only two decimal places 
+	FORMAT(DATEADD(MILLISECOND,duration_ms,0),'mm:ss') as duration, --convert milliseconds to minutes and seconds 
     ROW_NUMBER() OVER (PARTITION BY track_name, track_artist ORDER BY track_popularity DESC) AS RowNum
   FROM
     spotify_songs$
@@ -106,4 +108,43 @@ FROM
 WHERE
   RowNum = 1;
 ```
+
+#### Handling Null Values
+
+Identify and handle null values to ensure data quality. The following steps were taken:
+
+1. **Identifying Null Values:**
+  - SQL queries were executed to pinpoint rows where null values were present in specific columns.
+
+    ```sql
+    --To check which rows having null values
+    select * from spotify_songs$ where track_name is null or playlist_name is null or playlist_genre is null or 
+    playlist_genre is null or 
+    playlist_subgenre is null or 
+    danceability is null or energy is null or
+    [key] is null or
+    loudness is null or 
+    mode is null or 
+    speechiness is null or 
+    acousticness is null or 
+    liveness is null or 
+    valence is null or 
+    tempo is null or 
+    duration_ms is null;
+    ```
+
+    This query helped in understanding the extent of null values across the dataset.
+
+2. **Handling Null Values:**
+   - Once identified, null values were handled appropriately based on the nature of the dataset and specific column requirements.
+  
+
+    ```sql
+    --Remove row which having null value 
+    delete from spotify_songs$
+    where track_name is null;
+    ```
+
+  
+
 
