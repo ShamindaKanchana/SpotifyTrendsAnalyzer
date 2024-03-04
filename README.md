@@ -148,3 +148,20 @@ Identify and handle null values to ensure data quality. The following steps were
   
 
 
+### 2. Analysis
+
+### Analyze Stage - Artist Characteristics
+In this section, we explore the interplay between artist characteristics and song popularity. Visualizations are used to illustrate how key attributes such as danceability, energy, and overall popularity evolve across different artists.
+
+Insights from Visual Analysis
+Artist Characteristics Over Time
+The line chart below depicts how artist characteristics change over time, focusing on key metrics: popularity, danceability, and energy.
+![How each or arsits avg  popularity,avg tempo and avg enery varies ](Screenshots/popularity_tempo_change_with_artist.png)
+```sql
+--To  find how each of artist popularity relation with  average of their songs danceability,enery and tempo
+select track_artist,round(avg(danceability),2) as dance_ability,round(avg(track_popularity),2) as popularity,round(avg(tempo),2) as tempo,round(avg(energy),2) as energy from spotify_songs_cleaned$
+group by track_artist
+order by popularity desc;
+
+```
+
