@@ -165,3 +165,62 @@ order by popularity desc;
 
 ```
 
+##### Summary of Song Characteristics Analysis
+
+In the process of analyzing various song characteristics and their impact on popularity, several interesting patterns have emerged. Here are key insights:
+
+###### Influence of Tempo and Energy
+
+Despite initial expectations, the average energy and tempo of songs within an artist's portfolio show no strong correlation with the overall popularity of the artist. Even artists with lower average values for energy and tempo can have highly popular songs.
+
+##### Danceability's Minor Impact
+
+Contrary to tempo and energy, danceability exhibits a somewhat discernible influence on the average popularity of an artist. While it is not a decisive factor, there is a subtle connection between higher danceability and a slightly increased average popularity for some artists.
+
+##### Holistic View of Popularity Factors
+
+In summary, the analysis suggests that popularity, in the context of our dataset, is less reliant on specific musical attributes like tempo and energy. Instead, it appears to be influenced by a combination of factors, with danceability playing a modest role.
+
+These insights provide a valuable perspective for understanding the dynamics of song popularity and can guide future explorations in the realm of music analytics.
+
+##### Statistical Analysis Results
+
+###### Insights from Correlation Analysis
+
+####### Correlation Matrix Overview
+
+- **Correlation Type:** Pearson
+- **Number of Rows Used:** 26,159
+
+####### Correlations:
+
+|                | Track Popularity | Energy | Loudness | Tempo |
+|----------------|------------------|--------|----------|-------|
+| **Energy**     | -0.102           | 1      | 0.041    | 0.005 |
+| **Loudness**   | 0.041            | 0.686  | 1        | 0.152 |
+| **Tempo**      | 0.005            | 0.152  | 0.098    | 1     |
+
+
+![Correlation analysis through minitab](Screenshots/correlation_statistics.png)
+
+
+#### Insights:
+
+1. **Track Popularity vs. Energy:**
+   - The correlation coefficient of -0.102 suggests a weak negative correlation.
+   - Interpretation: As energy levels increase, track popularity tends to slightly decrease.
+
+2. **Track Popularity vs. Loudness:**
+   - The correlation coefficient of 0.041 indicates a weak positive correlation.
+   - Interpretation: There is a subtle positive relationship between track popularity and loudness.
+
+3. **Track Popularity vs. Tempo:**
+   - The correlation coefficient of 0.005 suggests a very weak positive correlation.
+   - Interpretation: Tempo shows minimal impact on track popularity.
+
+### Conclusion:
+
+- While there are correlations observed, they are generally weak, indicating that the relationships between these variables are not very strong.
+- It's essential to consider other factors and conduct further analysis to uncover additional insights.
+
+
