@@ -192,7 +192,7 @@ These insights provide a valuable perspective for understanding the dynamics of 
 - **Correlation Type:** Pearson
 - **Number of Rows Used:** 26,159
 
-######## Correlations:
+###### Correlations:
 
 |                | Track Popularity | Energy | Loudness | Tempo |
 |----------------|------------------|--------|----------|-------|
@@ -222,5 +222,53 @@ These insights provide a valuable perspective for understanding the dynamics of 
 
 - While there are correlations observed, they are generally weak, indicating that the relationships between these variables are not very strong.
 - It's essential to consider other factors and conduct further analysis to uncover additional insights.
+
+
+## One-Way ANOVA with Tukey's Test: Popularity Across Playlist Genres
+
+### Analysis Details:
+
+- **Null Hypothesis:** All means of popularity are equal across different playlist genres.
+- **Alternative Hypothesis:** Not all means are equal.
+- **Significance Level:** α = 0.05
+
+#### ANOVA Results:
+
+- **F-Value:** 183.04
+- **P-Value:** 0.000
+
+##### Tukey's Test Pairwise Comparisons:
+
+- **Grouping Information:**
+  - Group A: pop
+  - Group B: latin, rock, rap
+  - Group C: r&b
+  - Group D: edm
+
+![Correlation analysis through minitab](Screenshots/turckey_test_with_anova1.png)
+- **Significant Differences:**
+  - Groups with different letters (A, B, C, D) have significantly different mean popularity.
+
+###### Means and Standard Deviations:
+
+- **pop:** Mean = 44.653, StDev = 23.590, 95% CI = (43.966, 45.339)
+- **latin:** Mean = 43.581, StDev = 23.428, 95% CI = (42.876, 44.287)
+- **rock:** Mean = 42.384, StDev = 23.547, 95% CI = (41.656, 43.112)
+- **rap:** Mean = 42.274, StDev = 21.982, 95% CI = (41.641, 42.908)
+- **r&b:** Mean = 39.066, StDev = 23.807, 95% CI = (38.383, 39.749)
+- **edm:** Mean = 32.288, StDev = 20.904, 95% CI = (31.645, 32.930)
+
+![Residual plot for track popularity](Screenshots/Residual_plot_for_track_popularity.png)
+![Interval plot for Popularity genres](Screenshots/intervalplot_pupularity_genres.png)
+
+#### Conclusion:
+
+1. **ANOVA Results:**
+   - The one-way ANOVA indicates a statistically significant difference in mean popularity across different playlist genres.
+
+2. **Tukey's Test:**
+   - Tukey's test identifies specific groups with significantly different mean popularity.
+   - Groups A, B, C, and D have distinct mean popularity levels.
+
 
 
