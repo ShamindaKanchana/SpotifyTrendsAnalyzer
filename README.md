@@ -187,12 +187,12 @@ These insights provide a valuable perspective for understanding the dynamics of 
 
 ###### Insights from Correlation Analysis
 
-####### Correlation Matrix Overview
+###### Correlation Matrix Overview
 
 - **Correlation Type:** Pearson
 - **Number of Rows Used:** 26,159
 
-####### Correlations:
+######## Correlations:
 
 |                | Track Popularity | Energy | Loudness | Tempo |
 |----------------|------------------|--------|----------|-------|
