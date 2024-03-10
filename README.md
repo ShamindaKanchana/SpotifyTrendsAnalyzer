@@ -148,7 +148,7 @@ Identify and handle null values to ensure data quality. The following steps were
   
 
 
-### 2. Analysis
+### 3. Analysis
 
 ### Analyze Stage - Artist Characteristics
 In this section, we explore the interplay between artist characteristics and song popularity. Visualizations are used to illustrate how key attributes such as danceability, energy, and overall popularity evolve across different artists.
@@ -272,3 +272,24 @@ These insights provide a valuable perspective for understanding the dynamics of 
 
 
 
+### 4. Share
+
+In the Share phase of the Spotify Trends Analyzer project, we explored various aspects of the dataset to uncover insights related to artist popularity, playlist genres, and song release years.
+
+#### Top Artist Analysis
+###### 1. Top Artist in Pop Genre
+Visualization: Explored the popularity trend of pop songs' artists.
+
+-Insight: Identified Ariana Grande as a leading artist within the pop genre.
+
+Genre Popularity Analysis
+###### 2. Genre Popularity Distribution
+Visualization: Created a histogram depicting the popularity distribution across different genres.
+
+-Insight: Revealed that pop and latin genres have higher average popularity compared to other genres.
+
+##### Distribution of Playlist Genres
+##### 3. Playlist Genres Distribution
+-Visualization: Utilized a pie chart to illustrate the distribution of artists across different playlist genres.
+
+-Insight: Discovered that a significant portion of artists creates playlists as a genre, followed by pop songs.
