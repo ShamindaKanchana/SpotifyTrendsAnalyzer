@@ -93,3 +93,11 @@ where track_name is null;
 
 
 
+--To check which tracknames are having some unusual formats 
+select * from spotify_songs_cleaned$
+where track_name like '$%' or track_name like '#%' or track_name like '@%' or track_name like '!%' or track_name like '&%'
+or track_artist like '$%' or track_artist like '#%' or track_artist  like '@%' or track_artist like '!%' or track_artist like '&%';
+
+--
+select track_popularity from spotify_songs_cleaned$
+where track_popularity=0;
