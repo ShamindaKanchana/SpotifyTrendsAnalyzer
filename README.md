@@ -280,25 +280,25 @@ In the Share phase of the Spotify Trends Analyzer project, we explored various a
 
 
 #### Top Artist Analysis
-###### 1. Top Artist in Pop Genre
+##### 1. Top Artist in Pop Genre
 - Visualization: Explored the popularity trend of pop songs' artists.
 
 - Insight: Identified Ariana Grande as a leading artist within the pop genre.
 
-Genre Popularity Analysis
-###### 2. Genre Popularity Distribution
+#### Genre Popularity Analysis
+##### 2. Genre Popularity Distribution
 - Visualization: Created a histogram depicting the popularity distribution across different genres.
 
 - Insight: Revealed that pop and latin genres have higher average popularity compared to other genres.
 
-##### Distribution of Playlist Genres
-###### 3. Playlist Genres Distribution
+#### Distribution of Playlist Genres
+##### 3. Playlist Genres Distribution
 - Visualization: Utilized a pie chart to illustrate the distribution of artists across different playlist genres.
 
 -Insight: Discovered that a significant portion of artists creates playlists as a genre, followed by pop songs.
 
-##### Song Release Years
-###### 4. Song Release Years Distribution
+#### Song Release Years
+##### 4. Song Release Years Distribution
 - Visualization: Developed a pie chart showcasing the percentage of songs released in specific years.
 
 - Insight: Found that the dataset primarily includes songs released in recent years (2019, 2018, 2017, 2016), indicating a focus on modern music.
