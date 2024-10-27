@@ -285,6 +285,8 @@ In the Share phase of the Spotify Trends Analyzer project, we explored various a
 
 - Insight: Identified Ariana Grande as a leading artist within the pop genre.
 
+
+
 #### Genre Popularity Analysis
 ##### 2. Genre Popularity Distribution
 - Visualization: Created a histogram depicting the popularity distribution across different genres.
@@ -305,3 +307,36 @@ In the Share phase of the Spotify Trends Analyzer project, we explored various a
 
 
 _These visualizations provide a comprehensive overview of the Spotify dataset, highlighting trends in artist popularity, genre preferences, and the temporal distribution of songs. Stakeholders can easily grasp these insights through the accompanying screenshots._
+
+
+
+
+
+
+## Data Preparation for Spotify Dashboard with Python
+
+This project aims to create an interactive Spotify Trends dashboard in Tableau. The initial Spotify dataset required significant preprocessing and data cleaning to enable meaningful visualizations in Tableau. Here’s a summary of the preprocessing steps done in Python, with a link to the full code in the project repository.
+
+#### 1. Importing and Initial Exploration
+- **Loading the Dataset**: The raw Spotify dataset (`spotify_songs_cleaned.csv`) was imported into Python using `pandas`.
+- **Null and Special Character Checks**:
+  - Identified and removed rows with null values in essential columns, ensuring a clean dataset for analysis.
+  - Conducted checks on `track_artist` and `track_name` columns to identify rows with non-alphabetic characters.
+  - Rows with special or unrecognized characters in artist names were removed, while special characters in track names were standardized for consistency.
+
+```python
+# Load the dataset using encoding to handle special characters
+df = pd.read_csv('../Data_set/spotify_songs_cleaned.csv', encoding='ISO-8859-1')
+
+# Check for non-alphabetic characters in the artist names and track names
+non_alpha_artists = df[df['track_artist'].str.contains('[^a-zA-Z\s]', na=False)]
+non_alpha_tracks = df[df['track_name'].str.contains('[^a-zA-Z\s]', na=False)]
+
+# Count and display rows with non-alphabetic characters
+print(f"Non-alphabetic artist rows: {non_alpha_artists.shape[0]}")
+print(f"Non-alphabetic track rows: {non_alpha_tracks.shape[0]}")
+
+# Drop rows with NaN values
+df_cleaned = df.dropna()
+
+
