@@ -431,3 +431,6 @@ This Spotify Dashboard provides a holistic view of Spotify’s musical landscape
 
 
 This dashboard is a powerful tool for data analysts and music enthusiasts alike, allowing them to dive deep into Spotify’s data and discover valuable insights with ease.
+
+
+![Spotify Dashboard](Screenshots/Spotify_Dashboard.png)
