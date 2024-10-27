@@ -339,4 +339,33 @@ print(f"Non-alphabetic track rows: {non_alpha_tracks.shape[0]}")
 # Drop rows with NaN values
 df_cleaned = df.dropna()
 
+```
 
+#### 2. Data Cleaning and Transformation
+ **Creating Cleaned Columns:**
+- A new column, track_name_cleaned, was created to store cleaned track names for visualization purposes.
+- The cleaned dataset now contains consistent, properly formatted artist and track names.
+**Handling Missing and Zero Values:**
+- Identified columns with zero values and removed or imputed them as needed for specific columns.
+
+```python
+# Check for rows with zero values in important columns (e.g., danceability, energy)
+zero_danceability = df_cleaned[df_cleaned['danceability'] == 0]
+print(f"Rows with zero danceability: {zero_danceability.shape[0]}")
+
+# Create a cleaned track name column without special characters
+df_cleaned['track_name_cleaned'] = df_cleaned['track_name'].str.replace('[^a-zA-Z\s]', '', regex=True)
+```
+
+
+
+#### 3. Generating Aggregated Data for Visualization
+**Creating Aggregated Tables:**
+- An Excel file was generated containing tables with key metrics and attributes for easier integration with Tableau. These tables include:
+- Average Song Attributes: Averages of key features (danceability, energy, tempo) by track_artist.
+- Release Year and Attribute Summary: Summarizes the average values for tempo, danceability, and energy for each artist by release year.
+
+
+
+#### 4. Exporting for Tableau Integration
+- Export to Excel: Cleaned and aggregated data were exported as Excel files, enabling smooth data import into Tableau.
