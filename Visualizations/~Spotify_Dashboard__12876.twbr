@@ -19,7 +19,7 @@
     <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
-  <repository-location derived-from='https://vizhub/workbooks/Spotify_Dashboard_17288042546000?rev=4.9' id='Spotify_Dashboard_17288042546000' path='/workbooks' revision='5.4' />
+  <repository-location derived-from='https://vizhub/workbooks/Spotify_Dashboard_17288042546000?rev=4.9' id='Spotify_Dashboard_17288042546000' path='/workbooks' revision='6.1' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -765,7 +765,7 @@
       <column caption='Valence' datatype='real' name='[valence]' role='measure' type='quantitative' />
       <column-instance column='[playlist_genre]' derivation='None' name='[none:playlist_genre:nk]' pivot='key' type='nominal' />
       <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0y72a8x1ike61h13zn8rb1tkczec.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/21/2024 12:34:58 PM' username=''>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0y72a8x1ike61h13zn8rb1tkczec.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username=''>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Popularity_13E8B8A7F70D4412A92E6DC93C6275C3' table='[Extract].[Popularity_13E8B8A7F70D4412A92E6DC93C6275C3]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
             <relation name='Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0' table='[Extract].[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]' type='table' />
@@ -818,7 +818,6 @@
               <approx-count>10542</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>track_artist</remote-name>
@@ -833,7 +832,6 @@
               <approx-count>5176</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>track_popularity</remote-name>
@@ -847,7 +845,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>103</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>track_album_name</remote-name>
@@ -862,7 +859,6 @@
               <approx-count>8543</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>released_year</remote-name>
@@ -876,7 +872,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>65</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>playlist_name</remote-name>
@@ -891,7 +886,6 @@
               <approx-count>668</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>playlist_genre</remote-name>
@@ -906,7 +900,6 @@
               <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>playlist_subgenre</remote-name>
@@ -921,7 +914,6 @@
               <approx-count>24</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>danceability</remote-name>
@@ -935,7 +927,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1155</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>energy</remote-name>
@@ -949,7 +940,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1301</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>key</remote-name>
@@ -963,7 +953,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>12</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>loudness</remote-name>
@@ -977,7 +966,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2089</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>mode</remote-name>
@@ -991,7 +979,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>speechiness</remote-name>
@@ -1005,7 +992,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1824</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>acousticness</remote-name>
@@ -1019,7 +1005,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3553</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>liveness</remote-name>
@@ -1033,7 +1018,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1794</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>valence</remote-name>
@@ -1047,7 +1031,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1908</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>tempo</remote-name>
@@ -1061,7 +1044,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3924</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>duration</remote-name>
@@ -1076,7 +1058,6 @@
               <approx-count>481</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify!data_9AC1CCD360E84F0B9B95AE914A15DAC0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>track_artist_</remote-name>
@@ -1091,7 +1072,6 @@
               <approx-count>4842</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popularity_13E8B8A7F70D4412A92E6DC93C6275C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>released_year</remote-name>
@@ -1105,7 +1085,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>85</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popularity_13E8B8A7F70D4412A92E6DC93C6275C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>averagePopularity</remote-name>
@@ -1119,7 +1098,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>480</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popularity_13E8B8A7F70D4412A92E6DC93C6275C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>averagePopularity 1</remote-name>
@@ -1133,7 +1111,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>466</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popularity_13E8B8A7F70D4412A92E6DC93C6275C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>track_artist</remote-name>
@@ -1148,7 +1125,6 @@
               <approx-count>5518</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RGB_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Track!artist_2C38BA1B77C7468082A8AAD153117525]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>released_year</remote-name>
@@ -1162,7 +1138,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>75</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Track!artist_2C38BA1B77C7468082A8AAD153117525]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>danceability</remote-name>
@@ -1176,7 +1151,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>972</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Track!artist_2C38BA1B77C7468082A8AAD153117525]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>energy</remote-name>
@@ -1190,7 +1164,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1163</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Track!artist_2C38BA1B77C7468082A8AAD153117525]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>valence</remote-name>
@@ -1204,7 +1177,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1480</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Track!artist_2C38BA1B77C7468082A8AAD153117525]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>tempo</remote-name>
@@ -1218,7 +1190,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1294</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Track!artist_2C38BA1B77C7468082A8AAD153117525]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>number_of_songs</remote-name>
@@ -1232,7 +1203,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>16</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Track!artist_2C38BA1B77C7468082A8AAD153117525]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1380,12 +1350,9 @@
             <column-instance column='[Calculation_539306062342180864]' derivation='User' name='[usr:Calculation_539306062342180864:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='quantitative' column='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' included-values='in-range'>
-            <min>15</min>
+            <min>7</min>
             <max>46</max>
           </filter>
-          <shelf-sorts>
-            <shelf-sort-v2 dimension-to-sort='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_album_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' shelf='rows' />
-          </shelf-sorts>
           <slices>
             <column>[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]</column>
           </slices>
@@ -1394,6 +1361,10 @@
         <style>
           <style-rule element='axis'>
             <format attr='display' class='0' field='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' num-steps='7' palette='green_10_0' type='interpolated' />
           </style-rule>
           <style-rule element='worksheet'>
             <format attr='display-field-labels' scope='rows' value='false' />
@@ -1409,34 +1380,33 @@
         <panes>
           <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
-              <breakdown value='auto' />
+              <breakdown value='on' />
             </view>
             <mark class='Automatic' />
             <encodings>
+              <size column='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' />
+              <color column='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' />
               <text column='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_artist:nk]' />
-              <text column='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' />
-              <lod column='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_album_name:nk]' />
+              <text column='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_album_name:nk]' />
             </encodings>
-            <customized-label>
-              <formatted-text>
-                <run bold='true' fontcolor='#555555' italic='true'>&lt;</run>
-                <run bold='true' fontcolor='#555555' italic='true'>[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_artist:nk]</run>
-                <run bold='true' fontcolor='#555555' italic='true'>&gt;  &lt;</run>
-                <run bold='true' fontcolor='#555555' italic='true'>[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]</run>
-                <run bold='true' fontcolor='#555555' italic='true'>&gt;</run>
-              </formatted-text>
-            </customized-label>
             <style>
               <style-rule element='mark'>
                 <format attr='mark-labels-show' value='true' />
                 <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-color' value='#d3b348' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-transparency' value='255' />
               </style-rule>
             </style>
           </pane>
         </panes>
-        <rows>[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_album_name:nk]</rows>
-        <cols>[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]</cols>
+        <rows />
+        <cols />
       </table>
       <simple-id uuid='{2B726009-6E39-4556-A446-0B4C81492281}' />
     </worksheet>
@@ -2276,8 +2246,8 @@
             <column caption='Track Artist' datatype='string' name='[track_artist]' role='dimension' type='nominal' />
             <column caption='Track Name Cleaned' datatype='string' name='[track_name_cleaned]' role='dimension' type='nominal' />
             <column caption='Track Popularity' datatype='integer' name='[track_popularity]' role='measure' type='quantitative' />
-            <column-instance column='[Calculation_96264448022876160]' derivation='User' name='[usr:Calculation_96264448022876160:qk]' pivot='key' type='quantitative'>
-              <table-calc ordering-type='Columns' />
+            <column-instance column='[Calculation_96264448022876160]' derivation='User' name='[usr:Calculation_96264448022876160:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
             </column-instance>
           </datasource-dependencies>
           <filter class='categorical' column='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:Calculation_379146801290776576:nk]'>
@@ -10958,24 +10928,24 @@
           <filter class='categorical' column='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_artist:nk]'>
             <groupfilter function='member' level='[none:track_artist:nk]' member='&quot;Ariana Grande&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
-          <filter class='quantitative' column='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_96264448022876160:qk]' included-values='in-range'>
+          <filter class='quantitative' column='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_96264448022876160:qk:2]' included-values='in-range'>
             <min>1</min>
             <max>10</max>
           </filter>
           <shelf-sorts>
-            <shelf-sort-v2 dimension-to-sort='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_name_cleaned:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.057dtf00qs9txl10eimrf1hpw0gm].[sum:track_popularity:qk]' shelf='rows' />
+            <shelf-sort-v2 dimension-to-sort='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_name_cleaned:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.057dtf00qs9txl10eimrf1hpw0gm].[sum:track_popularity:qk]' shelf='columns' />
           </shelf-sorts>
           <slices>
             <column>[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_artist:nk]</column>
-            <column>[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_96264448022876160:qk]</column>
             <column>[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:released_year:qk]</column>
             <column>[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:Calculation_379146801290776576:nk]</column>
+            <column>[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_96264448022876160:qk:2]</column>
           </slices>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='axis'>
-            <format attr='display' class='0' field='[federated.057dtf00qs9txl10eimrf1hpw0gm].[sum:track_popularity:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.057dtf00qs9txl10eimrf1hpw0gm].[sum:track_popularity:qk]' scope='rows' value='false' />
           </style-rule>
           <style-rule element='label'>
             <format attr='display' field='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_name_cleaned:nk]' value='false' />
@@ -11002,14 +10972,15 @@
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
             <encodings>
               <text column='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_name_cleaned:nk]' />
             </encodings>
             <customized-label>
               <formatted-text>
-                <run fontcolor='#1db954' fontname='Verdana' fontsize='8' italic='true'>&lt;</run>
-                <run fontcolor='#1db954' fontname='Verdana' fontsize='8' italic='true'>[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_name_cleaned:nk]</run>
-                <run fontcolor='#1db954' fontname='Verdana' fontsize='8' italic='true'>&gt;</run>
+                <run fontcolor='#1db954' fontname='Verdana' italic='true'>&lt;</run>
+                <run fontcolor='#1db954' fontname='Verdana' italic='true'>[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_name_cleaned:nk]</run>
+                <run fontcolor='#1db954' fontname='Verdana' italic='true'>&gt;</run>
               </formatted-text>
             </customized-label>
             <style>
@@ -11017,12 +10988,14 @@
                 <format attr='mark-labels-cull' value='true' />
                 <format attr='mark-color' value='#aa5500' />
                 <format attr='mark-labels-show' value='true' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='size' value='1.7911050319671631' />
               </style-rule>
             </style>
           </pane>
         </panes>
-        <rows>[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_name_cleaned:nk]</rows>
-        <cols>[federated.057dtf00qs9txl10eimrf1hpw0gm].[sum:track_popularity:qk]</cols>
+        <rows>[federated.057dtf00qs9txl10eimrf1hpw0gm].[sum:track_popularity:qk]</rows>
+        <cols>[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_name_cleaned:nk]</cols>
       </table>
       <simple-id uuid='{D2EDB461-E53E-4792-96CE-CE769CE04B4D}' />
     </worksheet>
@@ -11064,10 +11037,10 @@
       </datasource-dependencies>
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='82862' id='24' is-fixed='true' type-v2='layout-basic' w='83023' x='16512' y='16186'>
-            <zone h='43568' id='5' param='vert' type-v2='layout-flow' w='83023' x='16512' y='16186'>
-              <zone fixed-size='105' h='12500' id='10' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='83023' x='16512' y='16186'>
-                <zone fixed-size='257' h='12500' id='12' is-fixed='true' name='Total_artists' w='27674' x='16512' y='16190'>
+          <zone h='82896' id='24' is-fixed='true' type-v2='layout-basic' w='87965' x='11570' y='16171'>
+            <zone h='43585' id='5' param='vert' type-v2='layout-flow' w='87965' x='11570' y='16171'>
+              <zone fixed-size='105' h='12252' id='10' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='87965' x='11570' y='16171'>
+                <zone fixed-size='257' h='12252' id='12' is-fixed='true' name='Total_artists' w='29360' x='11570' y='16219'>
                   <layout-cache cell-count-h='1' non-cell-size-h='15' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11076,7 +11049,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='319' h='12500' id='13' is-fixed='true' name='No_of_songs' w='27674' x='44186' y='16190'>
+                <zone fixed-size='319' h='12252' id='13' is-fixed='true' name='No_of_songs' w='29303' x='40930' y='16219'>
                   <layout-cache cell-count-h='1' non-cell-size-h='15' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11085,7 +11058,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='12500' id='14' name='No_of_ALbums' w='27675' x='71860' y='16190'>
+                <zone h='12252' id='14' name='No_of_ALbums' w='29302' x='70233' y='16219'>
                   <layout-cache cell-count-h='1' non-cell-size-h='15' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11101,18 +11074,19 @@
                   <format attr='background-color' value='#1db954' />
                 </zone-style>
               </zone>
-              <zone h='31064' id='17' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='83023' x='16512' y='28686'>
-                <zone h='31072' id='18' name='Artist_popularity' w='20755' x='16512' y='28690'>
+              <zone h='31331' id='17' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='87965' x='11570' y='28423'>
+                <zone h='31272' id='18' name='Artist_popularity' w='22035' x='11570' y='28471'>
                   <layout-cache minwidth='100' type-h='cell' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
                     <format attr='border-width' value='0' />
                     <format attr='margin' value='4' />
+                    <format attr='background-color' value='#f9f9f9' />
                   </zone-style>
                 </zone>
-                <zone h='31072' id='21' name='Track_Popularity' w='20756' x='37267' y='28690'>
-                  <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
+                <zone h='31272' id='21' name='Track_Popularity' w='21976' x='33605' y='28471'>
+                  <layout-cache minheight='173' minwidth='100' type-h='scalable' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -11120,8 +11094,8 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='31072' id='60' name='Album_details' w='20756' x='58023' y='28690'>
-                  <layout-cache minwidth='260' type-h='fixed' type-w='scalable' />
+                <zone h='31272' id='60' name='Album_details' w='21977' x='55581' y='28471'>
+                  <layout-cache minwidth='260' type-h='cell' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -11129,7 +11103,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='31072' id='86' name='SongsperYear' w='20756' x='78779' y='28690'>
+                <zone h='31272' id='86' name='SongsperYear' w='21977' x='77558' y='28471'>
                   <layout-cache minheight='207' type-h='scalable' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11140,9 +11114,9 @@
                 </zone>
               </zone>
             </zone>
-            <zone h='39294' id='25' param='horz' type-v2='layout-flow' w='83023' x='16512' y='59754'>
-              <zone fixed-size='701' h='39294' id='26' is-fixed='true' param='horz' type-v2='layout-flow' w='40756' x='16512' y='59754'>
-                <zone fixed-size='323' h='39294' id='27' is-fixed='true' name='Genre' w='19244' x='16512' y='59754'>
+            <zone h='39311' id='25' param='horz' type-v2='layout-flow' w='87965' x='11570' y='59756'>
+              <zone fixed-size='701' h='39311' id='26' is-fixed='true' param='horz' type-v2='layout-flow' w='40756' x='11570' y='59756'>
+                <zone fixed-size='323' h='39311' id='27' is-fixed='true' name='Genre' w='19244' x='11570' y='59756'>
                   <layout-cache minheight='154' type-h='scalable' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11151,7 +11125,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='39294' id='29' name='Danceability' w='21512' x='35756' y='59754'>
+                <zone h='39311' id='29' name='Danceability' w='21512' x='30814' y='59756'>
                   <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11161,7 +11135,7 @@
                   </zone-style>
                 </zone>
               </zone>
-              <zone fixed-size='328' h='39294' id='31' is-fixed='true' name='Energy' w='19535' x='57268' y='59754'>
+              <zone fixed-size='328' h='39311' id='31' is-fixed='true' name='Energy' w='19535' x='52326' y='59756'>
                 <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
                 <zone-style>
                   <format attr='border-color' value='#000000' />
@@ -11170,7 +11144,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='39294' id='43' name='Tempo' w='22732' x='76803' y='59754'>
+              <zone h='39311' id='43' name='Tempo' w='27674' x='71861' y='59756'>
                 <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
                 <zone-style>
                   <format attr='border-color' value='#000000' />
@@ -11181,8 +11155,8 @@
               </zone>
             </zone>
           </zone>
-          <zone h='82862' id='16' param='vert' type-v2='layout-flow' w='16047' x='465' y='16186'>
-            <zone h='5238' id='19' name='Artist_popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_920141704097378304:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='16047' x='465' y='16186'>
+          <zone h='82896' id='16' param='vert' type-v2='layout-flow' w='11105' x='465' y='16171'>
+            <zone h='7235' id='19' name='Artist_popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_920141704097378304:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='11105' x='465' y='16171'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -11191,7 +11165,7 @@
                 <format attr='background-color' value='#1db954' />
               </zone-style>
             </zone>
-            <zone h='30241' id='20' name='Artist_popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:released_year (Popularity):ok]' type-v2='filter' w='16047' x='465' y='21424'>
+            <zone h='27329' id='20' name='Artist_popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:released_year (Popularity):ok]' type-v2='filter' w='11105' x='465' y='23406'>
               <zone-style>
                 <format attr='border-color' value='#1db954' />
                 <format attr='border-style' value='solid' />
@@ -11200,7 +11174,7 @@
                 <format attr='background-color' value='#1db954' />
               </zone-style>
             </zone>
-            <zone h='5238' id='22' name='Track_Popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:released_year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' values='relevant' w='16047' x='465' y='51665'>
+            <zone h='7235' id='22' name='Track_Popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:released_year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' values='relevant' w='11105' x='465' y='50735'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -11209,7 +11183,7 @@
                 <format attr='background-color' value='#1db954' />
               </zone-style>
             </zone>
-            <zone h='30241' id='23' mode='radiolist' name='Track_Popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_artist:nk]' type-v2='filter' w='16047' x='465' y='56903'>
+            <zone h='27329' id='23' mode='radiolist' name='Track_Popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_artist:nk]' type-v2='filter' w='11105' x='465' y='57970'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -11218,7 +11192,7 @@
                 <format attr='background-color' value='#1db954' />
               </zone-style>
             </zone>
-            <zone h='5714' id='30' name='Danceability' pane-specification-id='1' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[sum:number_of_songs:qk]' single-line='true' type-v2='color' w='16047' x='465' y='87144'>
+            <zone h='5600' id='30' name='Danceability' pane-specification-id='1' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[sum:number_of_songs:qk]' single-line='true' type-v2='color' w='11105' x='465' y='85299'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -11226,7 +11200,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6190' id='61' name='Album_details' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='16047' x='465' y='92858'>
+            <zone h='8168' id='61' name='Album_details' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='11105' x='465' y='90899'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -11236,7 +11210,7 @@
               </zone-style>
             </zone>
           </zone>
-          <zone fixed-size='128' h='15234' id='7' is-fixed='true' type-v2='title' w='82733' x='465' y='952'>
+          <zone fixed-size='128' h='15238' id='7' is-fixed='true' type-v2='title' w='82733' x='465' y='933'>
             <zone-style>
               <format attr='border-color' value='#000000' />
               <format attr='border-style' value='none' />
@@ -11245,7 +11219,7 @@
               <format attr='background-color' value='#1db954' />
             </zone-style>
           </zone>
-          <zone h='15234' id='40' is-centered='0' is-scaled='1' param='Image/icon-framed.svg' type-v2='bitmap' w='16337' x='83198' y='952'>
+          <zone h='15238' id='40' is-centered='0' is-scaled='1' param='Image/icon-framed.svg' type-v2='bitmap' w='16337' x='83198' y='933'>
             <zone-style>
               <format attr='border-color' value='#000000' />
               <format attr='border-style' value='none' />
@@ -11272,9 +11246,9 @@
           </layout-options>
           <size maxheight='3150' minheight='3150' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='102' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98096' id='101' param='vert' type-v2='layout-flow' w='99070' x='465' y='952'>
-                <zone fixed-size='128' h='15234' id='7' type-v2='title' w='82733' x='465' y='952'>
+            <zone h='100000' id='112' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98134' id='111' param='vert' type-v2='layout-flow' w='99070' x='465' y='933'>
+                <zone fixed-size='128' h='15238' id='7' type-v2='title' w='82733' x='465' y='933'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -11284,7 +11258,7 @@
                     <format attr='background-color' value='#1db954' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='123' h='15234' id='40' is-centered='0' is-fixed='true' is-scaled='1' param='Image/icon-framed.svg' type-v2='bitmap' w='16337' x='83198' y='952'>
+                <zone fixed-size='123' h='15238' id='40' is-centered='0' is-fixed='true' is-scaled='1' param='Image/icon-framed.svg' type-v2='bitmap' w='16337' x='83198' y='933'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -11293,7 +11267,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='100' h='12500' id='12' is-fixed='true' name='Total_artists' w='27674' x='16512' y='16190'>
+                <zone fixed-size='98' h='12252' id='12' is-fixed='true' name='Total_artists' w='29360' x='11570' y='16219'>
                   <layout-cache cell-count-h='1' non-cell-size-h='15' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11303,7 +11277,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='100' h='12500' id='13' is-fixed='true' name='No_of_songs' w='27674' x='44186' y='16190'>
+                <zone fixed-size='98' h='12252' id='13' is-fixed='true' name='No_of_songs' w='29303' x='40930' y='16219'>
                   <layout-cache cell-count-h='1' non-cell-size-h='15' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11313,7 +11287,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='100' h='12500' id='14' is-fixed='true' name='No_of_ALbums' w='27675' x='71860' y='16190'>
+                <zone fixed-size='98' h='12252' id='14' is-fixed='true' name='No_of_ALbums' w='29302' x='70233' y='16219'>
                   <layout-cache cell-count-h='1' non-cell-size-h='15' type-h='cell' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11323,7 +11297,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='5238' id='19' name='Artist_popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_920141704097378304:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='16047' x='465' y='16186'>
+                <zone h='7235' id='19' name='Artist_popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_920141704097378304:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='11105' x='465' y='16171'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -11333,7 +11307,7 @@
                     <format attr='background-color' value='#1db954' />
                   </zone-style>
                 </zone>
-                <zone h='30241' id='20' mode='checkdropdown' name='Artist_popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:released_year (Popularity):ok]' type-v2='filter' w='16047' x='465' y='21424'>
+                <zone h='27329' id='20' mode='checkdropdown' name='Artist_popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:released_year (Popularity):ok]' type-v2='filter' w='11105' x='465' y='23406'>
                   <zone-style>
                     <format attr='border-color' value='#1db954' />
                     <format attr='border-style' value='solid' />
@@ -11343,27 +11317,18 @@
                     <format attr='background-color' value='#1db954' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='259' h='31072' id='18' is-fixed='true' name='Artist_popularity' w='20755' x='16512' y='28690'>
-                  <layout-cache minwidth='100' type-h='cell' type-w='scalable' />
+                <zone fixed-size='261' h='31272' id='18' is-fixed='true' name='Artist_popularity' w='22035' x='11570' y='28471'>
+                  <layout-cache cell-count-h='10' minwidth='100' non-cell-size-h='48' type-h='cell' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
                     <format attr='border-width' value='0' />
                     <format attr='margin' value='4' />
                     <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f9f9f9' />
                   </zone-style>
                 </zone>
-                <zone h='5238' id='22' name='Track_Popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:released_year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' values='relevant' w='16047' x='465' y='51665'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                    <format attr='background-color' value='#1db954' />
-                  </zone-style>
-                </zone>
-                <zone h='30241' id='23' mode='dropdown' name='Track_Popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_artist:nk]' type-v2='filter' w='16047' x='465' y='56903'>
+                <zone h='7235' id='22' name='Track_Popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:released_year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' values='relevant' w='11105' x='465' y='50735'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -11373,17 +11338,7 @@
                     <format attr='background-color' value='#1db954' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='259' h='31072' id='21' is-fixed='true' name='Track_Popularity' w='20756' x='37267' y='28690'>
-                  <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone h='6190' id='61' name='Album_details' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='16047' x='465' y='92858'>
+                <zone h='27329' id='23' mode='dropdown' name='Track_Popularity' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[none:track_artist:nk]' type-v2='filter' w='11105' x='465' y='57970'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -11393,8 +11348,8 @@
                     <format attr='background-color' value='#1db954' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='259' h='31072' id='60' is-fixed='true' name='Album_details' w='20756' x='58023' y='28690'>
-                  <layout-cache minwidth='260' type-h='fixed' type-w='scalable' />
+                <zone fixed-size='261' h='31272' id='21' is-fixed='true' name='Track_Popularity' w='21976' x='33605' y='28471'>
+                  <layout-cache fixed-size-h='252' minwidth='100' type-h='fixed' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -11403,7 +11358,27 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='259' h='31072' id='86' is-fixed='true' name='SongsperYear' w='20756' x='78779' y='28690'>
+                <zone h='8168' id='61' name='Album_details' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='11105' x='465' y='90899'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#1db954' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='261' h='31272' id='60' is-fixed='true' name='Album_details' w='21977' x='55581' y='28471'>
+                  <layout-cache cell-count-h='1' minwidth='260' non-cell-size-h='52' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='261' h='31272' id='86' is-fixed='true' name='SongsperYear' w='21977' x='77558' y='28471'>
                   <layout-cache minheight='207' type-h='scalable' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11413,7 +11388,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='39294' id='27' is-fixed='true' name='Genre' w='19244' x='16512' y='59754'>
+                <zone fixed-size='280' h='39311' id='27' is-fixed='true' name='Genre' w='19244' x='11570' y='59756'>
                   <layout-cache minheight='154' type-h='scalable' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11423,7 +11398,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='39294' id='29' is-fixed='true' name='Danceability' w='21512' x='35756' y='59754'>
+                <zone fixed-size='280' h='39311' id='29' is-fixed='true' name='Danceability' w='21512' x='30814' y='59756'>
                   <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11433,7 +11408,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='5714' id='30' name='Danceability' pane-specification-id='1' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[sum:number_of_songs:qk]' single-line='true' type-v2='color' w='16047' x='465' y='87144'>
+                <zone h='5600' id='30' name='Danceability' pane-specification-id='1' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[sum:number_of_songs:qk]' single-line='true' type-v2='color' w='11105' x='465' y='85299'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -11442,7 +11417,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='39294' id='31' is-fixed='true' name='Energy' w='19535' x='57268' y='59754'>
+                <zone fixed-size='280' h='39311' id='31' is-fixed='true' name='Energy' w='19535' x='52326' y='59756'>
                   <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11452,7 +11427,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='39294' id='43' is-fixed='true' name='Tempo' w='22732' x='76803' y='59754'>
+                <zone fixed-size='280' h='39311' id='43' is-fixed='true' name='Tempo' w='27674' x='71861' y='59756'>
                   <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -11476,7 +11451,7 @@
       <simple-id uuid='{106C3323-BE30-4016-9919-2176D549DAAF}' />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
+  <windows show-side-pane='false' source-height='30'>
     <window class='worksheet' name='Artist_popularity'>
       <cards>
         <edge name='left'>
@@ -11532,7 +11507,7 @@
       </viewpoint>
       <simple-id uuid='{051DA5E0-A0A7-43AD-9B79-2BB965169C48}' />
     </window>
-    <window class='worksheet' maximized='true' name='No_of_songs'>
+    <window class='worksheet' name='No_of_songs'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -11584,7 +11559,7 @@
       </viewpoint>
       <simple-id uuid='{6F2CD259-DF97-4A94-A672-09A772ABEA45}' />
     </window>
-    <window class='worksheet' name='Track_Popularity'>
+    <window class='worksheet' maximized='true' name='Track_Popularity'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -11760,6 +11735,7 @@
         <edge name='right'>
           <strip size='160'>
             <card param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.057dtf00qs9txl10eimrf1hpw0gm].[usr:Calculation_539306062342180864:qk]' type='color' />
           </strip>
         </edge>
       </cards>
@@ -11798,7 +11774,9 @@
     </window>
     <window class='dashboard' name='Spotify Dashboard'>
       <viewpoints>
-        <viewpoint name='Album_details' />
+        <viewpoint name='Album_details'>
+          <zoom type='entire-view' />
+        </viewpoint>
         <viewpoint name='Artist_popularity'>
           <zoom type='entire-view' />
         </viewpoint>
@@ -11823,7 +11801,7 @@
         </viewpoint>
         <viewpoint name='Track_Popularity' />
       </viewpoints>
-      <active id='4' />
+      <active id='60' />
       <simple-id uuid='{E7BA5428-13B9-4FDF-8B5E-16CA39847C02}' />
     </window>
   </windows>
